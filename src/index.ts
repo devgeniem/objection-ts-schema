@@ -44,7 +44,7 @@ export function addSchema(isRequired?: Boolean) {
     }
 
     // settings jsonSchema required - array here
-    // don't do anything to required if isRequired is undefined
+    // don't do anything to required - array if isRequired is undefined
     if (isRequired != undefined) {
       const required: Key[] = Array.from(existingSchema ? existingSchema.required || [] : []);
       const requiredPropertyIndex = required.indexOf(propertyKey)
