@@ -48,6 +48,11 @@ The required parameter is needed to inform the decorator whether the field is op
 As far as we know, [reflect-metadata](https://github.com/rbuckton/reflect-metadata) does not provide a way to determine union types or optional fields.
 
 
+## disclaimer 
+
+While this is a fairly simple library, it has not been tested comprehensively. Use with care.
+
+
 
 
 
