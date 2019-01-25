@@ -1,0 +1,14 @@
+{
+  "name": "objection-ts-schema",
+  "version": "0.0.1",
+  "description": "Objection decorators for adding jsonSchema - validation from reflect-metadata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mika Puhakka, Jussi Löf",
+  "license": "ISC",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
