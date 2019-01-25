@@ -7,5 +7,8 @@ export function addSchema(target: any, propertyKey: string | symbol): void {
       properties: {}
     };
   }
+  if (!target.constructor['jsonSchema'].properties)
+    target.constructor['jsonSchema'].properties = {};
+  if (!target.constructor['jsonSchema'].type) target.constructor['jsonSchema'].type = 'object';
   target.constructor['jsonSchema'].properties[propertyKey] = { type: type.name.toLowerCase() };
 }
