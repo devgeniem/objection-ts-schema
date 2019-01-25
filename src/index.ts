@@ -1,5 +1,5 @@
 import "reflect-metadata";
-export default function addSchema(target: any, propertyKey: string | symbol) {
+export function addSchema(target: any, propertyKey: string | symbol): any {
   const type = Reflect.getMetadata("design:type", target, propertyKey);
   if (!target.jsonSchema) {
     target.jsonSchema = {
