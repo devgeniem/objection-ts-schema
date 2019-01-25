@@ -1,5 +1,5 @@
 import "reflect-metadata";
-export function addSchema(target: any, propertyKey: string | symbol): any {
+export function addSchema(target: any, propertyKey: string | symbol): void {
   const type = Reflect.getMetadata("design:type", target, propertyKey);
   if (!target.jsonSchema) {
     target.jsonSchema = {
@@ -8,5 +8,4 @@ export function addSchema(target: any, propertyKey: string | symbol): any {
     };
   }
   target.jsonSchema.properties[propertyKey] = { type: type.name.toLowerCase() };
-  return target;
 }
