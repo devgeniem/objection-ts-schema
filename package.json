@@ -16,6 +16,10 @@
   "files": [
     "lib/**/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/devgeniem/objection-ts-schema.git"
+  },
   "keywords": [
     "objection",
     "orm",
